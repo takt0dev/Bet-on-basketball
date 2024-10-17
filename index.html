@@ -30,20 +30,25 @@
     </header>
     
     <div class="download-section">
-        <img src="src/GooglePlay.png" alt="Disponível no Google Play" class="google-play">
+        <div class="store-buttons">
+            <img src="src/GooglePlay.png" alt="Disponível no Google Play" class="store-button">
+            <img src="src/AppStore.png" alt="Disponível na App Store" class="store-button">
+        </div>
         <button class="download-button">DOWNLOAD</button>
     </div>
 
     <section class="carousel-section">
         <div class="carousel">
-            <video id="video1" class="carousel-video" muted playsinline autoplay>
-                <source src="src/video1.mp4" type="video/mp4">
-                Seu navegador não suporta o vídeo.
-            </video>
-            <video id="video2" class="carousel-video" muted playsinline autoplay style="display: none;">
-                <source src="src/video2.mp4" type="video/mp4">
-                Seu navegador não suporta o vídeo.
-            </video>
+            <div class="video-container animated-border">
+                <video id="video1" class="carousel-video" muted playsinline autoplay>
+                    <source src="src/video1.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+                <video id="video2" class="carousel-video" muted playsinline autoplay style="display: none;">
+                    <source src="src/video2.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+            </div>
         </div>
         <div class="carousel-controls">
             <button onclick="showVideo(1)" class="carousel-btn">●</button>

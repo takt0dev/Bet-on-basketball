@@ -74,13 +74,12 @@ h1 {
     font-weight: bold;
 }
 
-.animated-border {
+.animated-border, .video-container {
     padding: 10px 15px;
     border: 2px solid #ff6600;
     border-radius: 8px;
     animation: borderPulse 1.5s infinite;
-    margin-top: 1vh;
-    max-width: 60%;
+    box-shadow: 0 0 10px #ff6600, 0 0 20px #ff6600, 0 0 30px #ff4500;
 }
 
 @keyframes borderPulse {
@@ -120,10 +119,15 @@ h1 {
     align-items: center;
 }
 
-.google-play {
-    width: 20vw;
-    max-width: 150px;
+.store-buttons {
+    display: flex;
+    gap: 10px;
     margin-bottom: 1vh;
+}
+
+.store-button {
+    width: 130px;
+    height: auto;
 }
 
 .download-button {
@@ -154,14 +158,17 @@ h1 {
 .carousel {
     width: 100%;
     max-width: 70vw;
-    max-height: 35vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-video {
     width: 100%;
-    height: 100%;
-    border-radius: 0px;
-    box-shadow: none;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     display: none;
@@ -223,8 +230,8 @@ h1 {
         padding: 1.5vh 5vw;
     }
 
-    .google-play {
-        width: 40vw;
+    .store-button {
+        width: 100px; 
     }
 
     .carousel {
