@@ -6,6 +6,7 @@ function showVideo(videoNumber) {
 
     videos[currentVideo].style.opacity = '0';
     videos[currentVideo].pause();
+    videos[currentVideo].style.display = 'none';
 
     currentVideo = videoNumber - 1;
 
@@ -13,12 +14,6 @@ function showVideo(videoNumber) {
     setTimeout(() => {
         videos[currentVideo].style.opacity = '1';
         videos[currentVideo].play();
-
-        videos.forEach((video, index) => {
-            if (index !== currentVideo) {
-                video.style.display = 'none';
-            }
-        });
     }, 50);
 }
 
