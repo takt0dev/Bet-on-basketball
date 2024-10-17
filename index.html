@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BET.ON.BASKETBALL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">BET.ON.BASKETBALL</div>
+    
+    <header class="header">
+        <div class="logo-placeholder">
+            <img src="src/logo.png" alt="Logo do Jogo" class="logo">
+        </div>
+        <h1>
+            <span class="basketball-icon">
+                <img src="src/bola.png" alt="Bola de Basquete" class="basketball-spin">
+            </span>
+            BET.ON.BASKETBALL
+        </h1>
+        <p class="subtitle">Jogador vs Jogador</p>
+        <div class="details animated-border">
+            <p>Jogue contra outros jogadores</p>
+            <p>1 saque diário via pix</p>
+            <p>Modo treino</p>
+            <p>20 segundos para acertar</p>
+        </div>
+        <p class="description neon-text">Um jogo inovador para testar suas habilidades na quadra.</p>
+    </header>
+    
+    <div class="download-section">
+        <img src="src/GooglePlay.png" alt="Disponível no Google Play" class="google-play">
+        <button class="download-button">DOWNLOAD</button>
+    </div>
+
+    <section class="carousel-section">
+        <div class="carousel">
+            <video id="video1" class="carousel-video">
+                <source src="src/video1.mp4" type="video/mp4">
+                Seu navegador não suporta o vídeo.
+            </video>
+            <video id="video2" class="carousel-video" style="display: none;">
+                <source src="src/video2.mp4" type="video/mp4">
+                Seu navegador não suporta o vídeo.
+            </video>
+        </div>
+        <div class="carousel-controls">
+            <button onclick="showVideo(1)" class="carousel-btn">●</button>
+            <button onclick="showVideo(2)" class="carousel-btn">●</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>WWW.RHSYSTEMTI.COM</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
